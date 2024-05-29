@@ -18,6 +18,8 @@ If you turn it on with saved Mode 1 or 2 Excel file in the same directory as Mai
 pip install requests openpyxl
 ```
 
+Recommended to use VPN or better
+
 ## Usage
 
 To run in mode 1 follow these steps : 
