@@ -21,12 +21,13 @@ def telecharger_et_lire_m3u(url, username, password):
         return None
 
 def verifier_disponibilite(films, contenu_m3u):
+    languages = ["français", "francais", "french"]
     disponibilite = {film: "" for film in films}
     if contenu_m3u:
         for ligne in contenu_m3u:
             for film in films:
                 if film.lower() in ligne.lower():
-                    if any(lang in ligne.lower() for lang in ["français", "francais", "french"]):
+                    if any(lang in ligne.lower() for lang in languages):
                         disponibilite[film] = "x"
                     elif disponibilite[film] == "" and film.lower() in ligne.lower():
                         disponibilite[film] = "o"
