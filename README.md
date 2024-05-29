@@ -9,6 +9,7 @@ Two modes :
   - First one, it check for each unique servers the contents (VOD, channels and/or series) and return in an Excel file wich content has been find out following the content you writted in the code
   - Second one, it verify wich username/password work or not for each server. It also return expiration date if available.
 
+In mode 1, it write "X" if the content has been find in french or "O" if it has been find but not in french. You can modify it by changing the variable "languages". You can improve it by filling it with more possibilities like season or other.
 For each mode, you can stop it when running, the results are saved.
 If you turn it on with saved Mode 1 or 2 Excel file in the same directory as Main.py the code will not run analyse on these links.
 
